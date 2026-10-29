@@ -1,0 +1,211 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f6ff;
+  color: #20213a;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.header {
+  background: linear-gradient(135deg, #5145cd, #8876f5);
+  color: white;
+  text-align: center;
+  padding: 38px 20px 45px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 8px 25px #5145cd25;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: 0.5px;
+}
+
+.header p {
+  margin: 10px 0 0;
+  color: #eeebff;
+  font-size: 16px;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 32px auto;
+}
+
+.form-card {
+  background: white;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px #3030800d;
+  border: 1px solid #e9e8ff;
+  max-width: 650px;
+  margin: 0 auto 38px;
+}
+
+.form-card h2,
+.pets-section h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-size: 23px;
+}
+
+.form-card form {
+  display: grid;
+  gap: 10px;
+}
+
+.form-card label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.form-card input,
+.form-card select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dcdcf0;
+  border-radius: 10px;
+  outline: none;
+  background: #fcfcff;
+  color: #20213a;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+  border-color: #7163e9;
+  box-shadow: 0 0 0 3px #7163e91c;
+}
+
+.form-card button,
+.delete-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.form-card button {
+  margin-top: 12px;
+  background: #5b4bdb;
+  color: white;
+  font-weight: 600;
+}
+
+.form-card button:hover {
+  background: #4435bf;
+  transform: translateY(-1px);
+}
+
+.form-card button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.pets-section h2 {
+  margin-bottom: 20px;
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.pet-card {
+  background: white;
+  padding: 24px;
+  border: 1px solid #e8e7f8;
+  border-radius: 18px;
+  box-shadow: 0 6px 22px #3030800b;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px #5145cd18;
+}
+
+.pet-icon {
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  background: #f0edff;
+  border-radius: 18px;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.pet-card h3 {
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+.pet-card p {
+  color: #666780;
+  margin: 8px 0;
+}
+
+.delete-btn {
+  margin-top: 12px;
+  width: 100%;
+  color: #c73750;
+  background: #fff0f2;
+  font-weight: 600;
+}
+
+.delete-btn:hover {
+  background: #ffe0e5;
+}
+
+.error {
+  color: #c62842;
+  background: #fff0f2;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.empty {
+  background: white;
+  border: 1px dashed #c9c5ef;
+  border-radius: 14px;
+  padding: 28px;
+  text-align: center;
+  color: #77778f;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 30px 16px 38px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .form-card {
+    padding: 20px;
+  }
+
+  .container {
+    margin-top: 24px;
+  }
+}
